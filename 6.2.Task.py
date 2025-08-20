@@ -41,15 +41,13 @@ def check():
         dt = now.replace(second=0, microsecond=0)
         #print(f" dt={dt}\n")
         now = dt.timestamp()
-        #print(f"now1={now1}")
-        #print(f"now2={now2}")
-        print(f"  t={t}")
-        print(f"now={now}")
+        #print(f"  t={t}")
+        #print(f"now={now}")
         
 ###        if now >= t:  # Строчка из задания
         if now == t:  # так правильно
             play_snd()
-            mb.showinfo("Напоминание", "Время напоминания наступило!")
+            mb.showinfo("Напоминание", "Время напоминания наступило!") # опустил ниже play_snd()
             t = None
     window.after(10000, check)
 
