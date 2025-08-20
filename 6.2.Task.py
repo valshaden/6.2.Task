@@ -35,8 +35,20 @@ def set():
 def check():
     global t
     if t:
-        now = time.time()
-        if now >= t:
+###        now = time.time() # Строчка из задания
+        now = datetime.datetime.now()
+        print(f"now={now}")
+        dt = now.replace(second=0, microsecond=0)
+        print(f" dt={dt}\n")
+        now = dt.timestamp()
+        #print(f"now1={now1}")
+        #print(f"now2={now2}")
+        print(f"  t={t}")
+        print(f"now={now}")
+        
+###        if now >= t:  # Строчка из задания
+        if now == t:  # так правильно
+            mb.showinfo("Напоминание", "Время напоминания наступило!")
             play_snd()
             t = None
     window.after(10000, check)
