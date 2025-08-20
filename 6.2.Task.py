@@ -37,9 +37,9 @@ def check():
     if t:
 ###        now = time.time() # Строчка из задания
         now = datetime.datetime.now()
-        print(f"now={now}")
+        #print(f"now={now}")
         dt = now.replace(second=0, microsecond=0)
-        print(f" dt={dt}\n")
+        #print(f" dt={dt}\n")
         now = dt.timestamp()
         #print(f"now1={now1}")
         #print(f"now2={now2}")
@@ -48,8 +48,8 @@ def check():
         
 ###        if now >= t:  # Строчка из задания
         if now == t:  # так правильно
-            mb.showinfo("Напоминание", "Время напоминания наступило!")
             play_snd()
+            mb.showinfo("Напоминание", "Время напоминания наступило!")
             t = None
     window.after(10000, check)
 
