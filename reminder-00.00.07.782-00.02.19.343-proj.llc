@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'reminder-00.00.07.782-00.02.19.343.mp3',
+  cutSegments: [
+    {
+      end: 130.8182,
+      name: '',
+    },
+  ],
+}

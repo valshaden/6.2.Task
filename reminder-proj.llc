@@ -1,0 +1,11 @@
+{
+  version: 1,
+  mediaFileName: 'reminder.mp3',
+  cutSegments: [
+    {
+      start: 7.7818128853103765,
+      end: 139.34274,
+      name: '',
+    },
+  ],
+}
